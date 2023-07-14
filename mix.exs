@@ -54,7 +54,7 @@ defmodule Metatags.Mixfile do
       files: ["lib", "mix.exs", "README.md", "LICENSE", "CHANGELOG.md"],
       maintainers: ["johan Tell"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/johantell/metatags"}
+      links: %{"GitHub" => "https://github.com/LukeTheVirus/metatags"}
     ]
   end
 
@@ -66,7 +66,7 @@ defmodule Metatags.Mixfile do
         "CHANGELOG.md"
       ],
       source_ref: "v#{@version}",
-      source_url: "https://github.com/johantell/metatags"
+      source_url: "https://github.com/LukeTheVirus/metatags"
     ]
   end
 end
