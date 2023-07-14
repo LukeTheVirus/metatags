@@ -66,6 +66,10 @@ defmodule Metatags.HTML.TagBuilder do
     Tag.tag(:link, [rel: name, href: value] ++ extra_attributes)
   end
 
+  def print_tag(_, "og:" <> _rest = name, value, _) do
+    Tag.tag(:meta, property: name, content: value)
+  end
+
   def print_tag(_, key, value, _) do
     Tag.tag(:meta, name: key, content: value)
   end
